@@ -1,40 +1,64 @@
-# Welcome to Remix!
+Bu proje, Remix Framework ve TypeScript kullanılarak geliştirilmiştir. Unit testler için Jest ve React Testing Library kullanılmıştır. CSS olarak Tailwind CSS kullanılmıştır.
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Proje Özeti
 
-## Development
+Bu proje, ürün listeleme ve ürün detayı gösteren bir uygulamadır. Ana sayfada yatay ve dikey olarak API'den gelen ürünler listelenmektedir. Yatay listelenen ürünler için basit bir slider component tasarlanmış ve ürünler bu şekilde gösterilmiştir. Ürün listeleme sayfasında ürünlere tıklandığında, ürün detay sayfası açılarak ürün detayları gösterilmektedir.
 
-Run the dev server:
+## Kurulum
 
-```shellscript
+Projeyi klonladıktan sonra bağımlılıkları yüklemek için:
+
+```sh
+npm install
+```
+
+## Geliştirme
+
+Geliştirme sunucusunu çalıştırmak için:
+
+```sh
 npm run dev
 ```
 
-## Deployment
+## Testler
 
-First, build your app for production:
+Unit testleri çalıştırmak için:
+
+```sh
+npm test
+```
+
+Testleri çalıştırmadan önce, projenin bağımlılıklarının yüklü olduğundan emin olun (`npm install` komutunu çalıştırarak). Testler Jest ve React Testing Library kullanılarak yazılmıştır. Test dosyaları genellikle `__tests__` dizininde veya `.test.ts`/`.test.tsx` uzantılı dosyalarda bulunur.
+
+## Dağıtım
+
+Öncelikle, uygulamanızı production için build edin:
 
 ```sh
 npm run build
 ```
 
-Then run the app in production mode:
+Ardından uygulamayı production modunda çalıştırın:
 
 ```sh
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+Şimdi uygulamanızı deploy etmek için bir host seçmeniz gerekecek.
 
 ### DIY
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+Eğer Node uygulamalarını deploy etme konusunda deneyiminiz varsa, built-in Remix app server production için hazırdır.
 
-Make sure to deploy the output of `npm run build`
+`npm run build` komutunun çıktısını deploy ettiğinizden emin olun:
 
 - `build/server`
 - `build/client`
 
 ## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+Bu template, basit bir başlangıç deneyimi için Tailwind CSS ile yapılandırılmıştır. İstediğiniz CSS framework'ünü kullanabilirsiniz. Daha fazla bilgi için [Vite docs on css](https://vitejs.dev/guide/features.html#css) sayfasına bakabilirsiniz.
+
+## Katkıda Bulunma
+
+Katkıda bulunmak isterseniz, lütfen bir pull request gönderin veya bir issue açın.

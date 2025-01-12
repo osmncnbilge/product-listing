@@ -18,6 +18,11 @@ export default defineConfig({
         v3_singleFetch: true,
         v3_lazyRouteDiscovery: true,
       },
+      routes(defineRoutes) {
+        return defineRoutes((route) => {
+          route("products/:productId", "routes/products/$productId.tsx");
+        });
+      },
     }),
     tsconfigPaths(),
   ],
