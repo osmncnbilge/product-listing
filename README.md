@@ -28,7 +28,7 @@ Unit testleri çalıştırmak için:
 npm test
 ```
 
-Testleri çalıştırmadan önce, projenin bağımlılıklarının yüklü olduğundan emin olun (`npm install` komutunu çalıştırarak). Testler Jest ve React Testing Library kullanılarak yazılmıştır. Test dosyaları genellikle `__tests__` dizininde veya `.test.ts`/`.test.tsx` uzantılı dosyalarda bulunur.
+Testleri çalıştırmadan önce, projenin bağımlılıklarının yüklü olduğundan emin olun (`npm install` komutunu çalıştırarak). Testler Jest ve React Testing Library kullanılarak yazılmıştır.
 
 ## Dağıtım
 
